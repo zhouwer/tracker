@@ -713,7 +713,10 @@ void MainWindow::on_openButton_clicked()
         int delay_infer = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
 
 
-        putText(fram, "FPS : " + to_string((int(1000/delay_infer ))) , Point(100, 50), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50), 2);
+      
+          
+        putText(fram, " ALL FPS : " + to_string((int(1000/delay_infer ))) , Point(100, 20), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(0, 0, 255), 2);
+
 
 
         image = Mat2QImage(fram);      //Mat->QImage
