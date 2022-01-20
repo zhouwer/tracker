@@ -257,8 +257,8 @@ cv::Mat Trtyolosort::upda(Ui::MainWindow *ui,cv::Mat& fram,int &ill){
                 ui->listWidget_2->insertItem(io+1,"-----------------------------------------------------------------------------------------------------");
                 io=io+2;
                 }
-                }//if
-              }
+                }//if  10
+              } //if ok_i
             else {
                 std::cout<<"383------------------\n"<<"i:"<<i<<std::endl;
                 putText(fram, "Tracking failure detected" + to_string(i), Point(100, 80 + i * 10), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(0, 0, 255), 2);
@@ -267,11 +267,14 @@ cv::Mat Trtyolosort::upda(Ui::MainWindow *ui,cv::Mat& fram,int &ill){
                 }
 
 
-            }
-           putText(fram, "kcf Tracker Number:" + to_string(OK_.size()), Point(100, 20), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50), 2);
-           putText(fram, "FPS : " + to_string((int(fps))) + str, Point(100, 50), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50), 2);
+            }// trackerCSRT.size();
+           putText(fram, "kcf Tracker Number:" + to_string(OK_.size()), Point(100, 50), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50), 2);
+           putText(fram, "kcf Tracker update FPS : " + to_string((int(fps))) + str, Point(100, 90), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(50, 170, 50), 2);
 
 
+    } //ok-size>0
+    else{
+         ui->listWidget_2->clear(); //------------
 
     }
     return fram;
