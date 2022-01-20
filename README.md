@@ -17,6 +17,6 @@ https://blog.csdn.net/qq_42823342/article/details/120799577
 
 ![真实航拍](https://s4.ax1x.com/2022/01/20/7cS7c9.png)
 ![模拟航拍](https://s4.ax1x.com/2022/01/20/7cpcCD.png)
-![界面](https://github.com/zhouwer/tracker/blob/master/3.png)
+![界面](https://s4.ax1x.com/2022/01/20/7c9Vq1.png)
 
 
